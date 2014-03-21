@@ -1,0 +1,8 @@
+{
+    "key_quick_open": {
+        "key": {
+            "win": "Ctrl+O",
+            "mac": "Cmd+O"
+        },
+        "desc": "Open a file."
+}

@@ -1,0 +1,63 @@
+// Quick Open
+// ==========
+
+body.ac {
+    div.quick-open {
+
+        & > input {
+            width: 97%;
+            margin: 0px;
+
+            &::-ms-clear {
+                display: none;
+            }
+        }
+
+        & > div {
+            & > p {
+                text-align: center;
+            }
+
+            margin-top: 10px;
+            height: 325px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            & > ul {
+
+                list-style: none;
+                margin-left: 0px;
+
+                li {
+                    border-bottom: 1px solid #ddd;
+                    padding: 8px 17px 6px;
+
+                    &.selected,
+                    &:hover {
+                        background: #ddd;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    h2 {
+                        font-size: 14px;
+                        margin: 0px;
+                        line-height: 20px;
+                        color: #555;
+                    }
+
+                    p {
+                        white-space: nowrap;
+                        margin: 0;
+                        color: #777;
+                        width: 470px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+}

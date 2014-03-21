@@ -1,0 +1,12 @@
+{
+    "name": "quick-open",
+    "description": "Open files with the keyboard",
+    "codio": {
+    },
+    "format": "es6",
+    "main": "index.js",
+    "map": {
+        "info": "package.json",
+        "hotkeys": "hotkeys.json"
+    }
+}
