@@ -7,7 +7,9 @@
     "main": "index.js",
     "map": {
         "info": "package.json",
-        "hotkeys": "hotkeys.json",
-        "list": "github:javve/list.js@1.1.1"
+        "hotkeys": "hotkeys.json"
+    },
+    "dependencies": {
+        "list": "github:javve/list.js@^1.1.1"
     }
 }
