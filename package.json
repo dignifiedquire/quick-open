@@ -5,10 +5,6 @@
     },
     "format": "es6",
     "main": "index.js",
-    "map": {
-        "info": "package.json",
-        "hotkeys": "hotkeys.json"
-    },
     "dependencies": {
         "list": "github:javve/list.js@^1.1.1"
     }
