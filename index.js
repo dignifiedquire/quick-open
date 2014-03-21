@@ -1,7 +1,5 @@
-import info from 'info';
-import hotkeys from 'hotkeys';
-
 import {QuickOpen} from './lib/index';
+
 
 // Codio expects the plugin to be named `Extension`.
 export class Extension {
@@ -9,8 +7,9 @@ export class Extension {
     // allows for all interaction with the codio code base.
     constructor(app) {
         this.app = app;
-        this.info = info;
-        this.hotkeys = hotkeys;
+        this.info = System.import('./package.json!');
+        this.hotkeys = System.import('./hotkeys.json!';
+        this.style = System.import('./style.less!');
 
         this.quickOpen = new QuickOpen(app);
 
