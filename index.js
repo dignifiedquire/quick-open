@@ -1,3 +1,4 @@
+// ES6 style imports
 import {QuickOpen} from './lib/index';
 
 
@@ -7,10 +8,14 @@ export class Extension {
     // allows for all interaction with the codio code base.
     constructor(app) {
         this.app = app;
+        // System.import is async so all
+        // these are promises, so they can be used like this:
+        // this.info.then((info) => { ... });
         this.info = System.import('./package.json!');
         this.hotkeys = System.import('./hotkeys.json!';
         this.style = System.import('./style.less!');
 
+        // Pass the codio app object to the QuickOpen class
         this.quickOpen = new QuickOpen(app);
 
         // Listen to the hotkey
